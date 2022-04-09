@@ -1,19 +1,20 @@
 # linux_server
+how to set up a virtual machine(vm) instance on the cloud that is for free forever and fun stuff to use it for
 
 
 
-## google cloud vm instance
+## Google cloud vm instance
 [free conditions](https://cloud.google.com/free)
 
 [guide](https://medium.com/@hbmy289/how-to-set-up-a-free-micro-vps-on-google-cloud-platform-bddee893ac09)
 
 [video](https://youtu.be/f56PG7QxjFI)
 
-E2
+e2-micro
 
-central-1a iowa
+us-central1-a iowa
 
-careful do not select windows os liscencing fee
+careful, do not select windows os as there will be a liscencing fee
 
 ubuntu lts 20
 
@@ -23,16 +24,14 @@ ubuntu lts 20
 
 https://github.com/eisbetterthanpi/linux_server/blob/main/cidr.py
 
-nirsoft.net/countryip
+list of all major IP address blocks allocated for each country from [nirsoft.net](https://nirsoft.net/countryip/)
 
-Australia China
+[Australia](https://www.nirsoft.net/countryip/au.csv) and [China](https://www.nirsoft.net/countryip/cn.csv)
 
 cidr ip range
 
 
-
-
-## installing chrome
+## Installing chrome
 https://askubuntu.com/questions/245041/how-do-i-install-chrome-on-a-server
 
 
@@ -47,14 +46,15 @@ sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable
 sudo apt-get update
 sudo apt-get install google-chrome-stable
 ```
-
+get the available chromedriver versions 
+[chromedriver](https://chromedriver.chromium.org/downloads)
+copy the download link
 (https://chromedriver.storage.googleapis.com/85.0.4183.87/chromedriver_linux64.zip)
 
 (but need to unzip)
-
+edit the version number accordingly
 ```
 wget -N https://chromedriver.storage.googleapis.com/85.0.4183.87/chromedriver_linux64.zip -P ~/
-wget -N https://chromedriver.storage.googleapis.com/87.0.4280.88/chromedriver_linux64.zip -P ~/
 sudo apt install unzip
 unzip /home/yourusername/chromedriver_linux64.zip
 ```
@@ -72,7 +72,8 @@ https://github.com/eisbetterthanpi/python/blob/master/fthem.py
 ```
 
 
-## crontab
+## Crontab
+automate running script
 
 ```
 crontab -e
